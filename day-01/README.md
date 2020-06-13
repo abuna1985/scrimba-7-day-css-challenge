@@ -43,4 +43,4 @@ This is my end result:
 
 The only change I made was set a media query for screens with less than 800px of width to have padding on the sides (so text is visible) and to make the `font-size` slightly smaller.
 
-You can see the [completed challenge for day 1 here]()
+You can see the [completed challenge for day 1 here](https://abuna1985.github.io/scrimba-7-day-css-challenge/day-01/index.html)
