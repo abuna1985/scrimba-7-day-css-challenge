@@ -1,9 +1,82 @@
-/* DON'T TOUCH THIS! */
-html,
+/* Objectives for day 1 chaalenge
+[X]You have to center all the text on the page
+[X] Set the font to Roboto
+[X] Capitalize all the titles
+[X] Give the main title a font size of 4rem and the section titles a size of 3rem
+[X] Give all the sections an overall margin of 10% of the height of the page.
+[X] The section titles must have a color of #3278cf.
+[X] The main title must have a color of #174885.*/
+
+/* 1. Base Styles */
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-align: center;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 body {
   margin: 0;
   padding: 0;
 }
-/* DON'T TOUCH THIS! */
 
-/* Your main goal is to style and improve the HTML given to you. You have to center all the text on the page & set the font to Roboto, capitalize all the titles, give the main title a font size of 4em and the section titles a size of 3em, and give all the sections an overall margin of 10% of the height of the page. The section titles must have a color of #3278cf, while the main title must have a color of #174885. Good luck! */
+/* 2. Shared Styles */
+.title,
+.section-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-title,
+.contact-us-link {
+  color: #3278cf;
+}
+
+/* 3. Specific Styles */
+
+.container {
+  margin: 10vh auto;
+  max-width: 900px;
+}
+
+.title {
+  color: #174885;
+  font-size: 4rem;
+}
+
+.section-title {
+  font-size: 3rem;
+}
+
+.contact-us-link {
+  text-decoration: none;
+}
+
+.contact-us-link:hover {
+  text-decoration: underline;
+}
+
+.contact-us-link:active {
+  color: #174885;
+}
+
+/* 4. Responsiveness */
+@media screen and (max-width: 799px) {
+  .section {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
