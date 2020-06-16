@@ -4,20 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Challenge 2 - Navbar Creation</title>
+    <!-- link to Google font stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to external CSS reset -->
+    <link rel="stylesheet" href="assets/css/minireset.min.css" />
+    <!-- link to external CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="navbar">
-      <div class="title-container">
-        <h1 class="title">Navbar.</h1>
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__title">Navbar!</h1>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">About Us</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Our Mission</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Services</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul class="menu">
-        <li><a href="#" class="menu-item">Home</a></li>
-        <li><a href="#" class="menu-item">About Us</a></li>
-        <li><a href="#" class="menu-item">Our Mission</a></li>
-        <li><a href="#" class="menu-item">Services</a></li>
-        <li><a href="#" class="menu-item">Contact Us</a></li>
-      </ul>
     </header>
   </body>
 </html>
