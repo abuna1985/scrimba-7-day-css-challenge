@@ -1,9 +1,83 @@
-/* DON'T TOUCH THIS! */
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-/* DON'T TOUCH THIS! */
+/* 
+[] Convert starter into a responsive, functional navbar
+[] must stretch across the whole page
+[] have a background color set. 
+[] The nav links must be arranged horizontally 
+[] THe nave links need be placed below the title
+[] The title should be centered in the middle of the navbar
+*/
 
-/* Your goal is to turn basic HTML into a responsive, functional navbar, which includes both arranging the items and styling them. The navbar must stretch across the whole page & have a background color set. The items must be arranged horizontally & be placed below the title, which is centered in the middle of the navbar. Good luck! */
+/* 1. Base Styles */
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 2. Shared Styles */
+
+/* 3. Specific Styles */
+.header {
+  background-color: #ffebcd;
+}
+
+.header__container {
+  max-width: 650px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.main-nav {
+  width: 100%;
+}
+
+.main-nav__list {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main-nav__item {
+  padding-bottom: 10px;
+}
+
+.main-nav__link {
+  color: #1816eb;
+  text-decoration: none;
+}
+
+.main-nav__link:hover {
+  text-decoration: underline;
+}
+
+.main-nav__link:active {
+  color: #ffff00;
+}
+
+.main-nav__link:visited {
+  color: #1816eb;
+}
+
+/* 4. Responsiveness */
+@media screen and (max-width: 678px) {
+  .main-nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
